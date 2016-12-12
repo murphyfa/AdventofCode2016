@@ -13,6 +13,11 @@ namespace AdventofCode2016
         {
             Day1 dayOne = new Day1();
             Console.WriteLine("Day 1: " + dayOne.DayOne());
+
+            Day2 dayTwo = new Day2();
+            Console.WriteLine("Day 2: " + dayTwo.DayTwo());
+
+
             Console.ReadLine();
         }
     }

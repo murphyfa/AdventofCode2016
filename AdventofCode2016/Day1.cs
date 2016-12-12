@@ -17,12 +17,13 @@ namespace AdventofCode2016
         string loc;
         bool stopChecking = false;
 
+        string startupPath = System.IO.Path.GetFullPath(@"..\..\");
         string faceDir = "north";
         int curX = 0;
         int curY = 0;
 
         public string DayOne() {
-            using (StreamReader sr = new StreamReader(@"C:\Users\Me\documents\visual studio 2015\Projects\AdventofCode2016\AdventofCode2016\Day1\part1_input.txt"))
+            using (StreamReader sr = new StreamReader(startupPath + @"\Day1\part1_input.txt"))
             {
                 input = sr.ReadToEnd().Split(',');
             }
@@ -35,7 +36,7 @@ namespace AdventofCode2016
                 TurnAndGo(faceDir, turnDir, howFar);
             }
 
-            return dayOneAnswerOne = "You ended at " + curX + ", " + curY + " for a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + ".";
+            return dayOneAnswerOne = "Part 1: You ended at " + curX + ", " + curY + " for a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + ".";
         }
 
         void TurnAndGo(string facing, char turnDir, int howFar)
@@ -51,7 +52,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);
@@ -66,7 +67,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);
@@ -84,7 +85,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);
@@ -99,7 +100,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);
@@ -117,7 +118,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);
@@ -132,7 +133,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);
@@ -150,7 +151,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);
@@ -165,7 +166,7 @@ namespace AdventofCode2016
                             loc = (curX + "," + curY);
                             if (locations.Contains(loc) && stopChecking == false)
                             {
-                                Console.WriteLine("Day 1 Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
+                                Console.WriteLine("Day 1: Part 2: You have visited " + loc + " before, a distance of " + (Math.Abs(curX)+ Math.Abs(curY)) + " from the start");
                                 stopChecking = true;
                             }
                             locations.Add(loc);

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day1.cs" />
+    <Compile Include="Day2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,6 +55,8 @@
   <ItemGroup>
     <Content Include="Day1\Day1_Instructions.txt" />
     <Content Include="Day1\part1_input.txt" />
+    <Content Include="Day2\day2_input.txt" />
+    <Content Include="Day2\Day2_Instructions.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
