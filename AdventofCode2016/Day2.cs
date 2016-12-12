@@ -39,7 +39,7 @@ namespace AdventofCode2016
                 outputOne.Add(curKey.ToString());
                 outputTwo.Add(curKeyTwo);
             }
-            dayTwoAnswer = "Part 1: " + string.Join(",", outputOne.ToArray()) + "\nDay 2: Part 2: " + string.Join(",", outputTwo.ToArray());
+            dayTwoAnswer = "Part 1: Bathroom Code: " + string.Join(",", outputOne.ToArray()) + "\nDay 2: Part 2: Bathroom Code: " + string.Join(",", outputTwo.ToArray());
             return dayTwoAnswer;
         }
 

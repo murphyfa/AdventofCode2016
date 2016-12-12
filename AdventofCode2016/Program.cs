@@ -17,6 +17,8 @@ namespace AdventofCode2016
             Day2 dayTwo = new Day2();
             Console.WriteLine("Day 2: " + dayTwo.DayTwo());
 
+            Day3 dayThree = new Day3();
+            Console.WriteLine("Day 3: " + dayThree.DayThree());
 
             Console.ReadLine();
         }
